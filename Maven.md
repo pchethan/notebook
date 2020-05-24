@@ -31,11 +31,16 @@ To highlight, it can be used to manage project’s
 
 Focus is more on build aspect of mvn here.
 
+#### Form Factor
+
+mvn is a java program. It has no UI. However, it is integrated well into Intellij and other IDEs.
+
+
 ## Build Manually
 
 Knowning how JARs and WARs can be built manually gives perspective of what maven or any build automation tool does.
 
-## How to build a JAR
+### How to build a JAR
 
 #### JAR Structure
 
@@ -50,7 +55,7 @@ Create jar from command-line.
  -f specifies the archive file name
 ```
 
-## How to build a WAR?
+### How to build a WAR?
 
 #### War Structure
 
@@ -61,9 +66,9 @@ https://docs.oracle.com/javaee/7/tutorial/packaging003.htm
 `jar -cvf projectname.war *`
 
 
-## Form Factor
 
-mvn is a java program. It has no UI. However, it is integrated well into Intellij and other IDEs.
+
+
 
 ## Objectives
 
@@ -93,7 +98,7 @@ See [2]
 
 See [2]
 
-## Other things to note
+#### Other things to note
 
 - Was built to manage Java projects but can manage other language projects
 - Extensible - Plugin based
