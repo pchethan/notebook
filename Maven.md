@@ -132,7 +132,7 @@ mvn executes them in same order.
 - If phase is specified, mvn executes all preceding phases before running the specified phase.
 - If a goal is specified, mvn executes only that goal.
 
-
+![](images/maven/mvn_exec_model.jpg)
 
 ## Build Features
 
