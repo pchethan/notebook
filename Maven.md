@@ -1,4 +1,4 @@
-- [Apache Maven](#apache-maven)
+  * [Apache Maven](#apache-maven)
   * [References](#references)
   * [What is Maven?](#what-is-maven)
       - [Form Factor](#form-factor)
