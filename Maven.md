@@ -8,7 +8,30 @@
 2 https://maven.apache.org/what-is-maven.html
 3 https://docs.oracle.com/javase/tutorial/deployment/jar/apiindex.html
 ```
-## Pre-Read
+
+## What is Maven?
+
+From wikipaedia:
+
+>Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby,
+>Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta
+>Project. ”
+
+From [1]
+
+>Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven
+>can manage a project's build, reporting and documentation from a central piece of information. ”
+(Software project here means code project)
+
+To highlight, it can be used to manage project’s
+
+1. Build
+2. Reporting
+3. Documentation
+
+Focus is more on build aspect of mvn here.
+
+## Build Manually
 
 Knowning how JARs and WARs can be built manually gives perspective of what maven or any build automation tool does.
 
@@ -37,29 +60,8 @@ https://docs.oracle.com/javaee/7/tutorial/packaging003.htm
 
 `jar -cvf projectname.war *`
 
-## What is Maven?
 
-From wikipaedia:
-
->Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby,
->Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta
->Project. ”
-
-From [1]
-
->Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven
->can manage a project's build, reporting and documentation from a central piece of information. ”
-(Software project here means code project)
-
-To highlight, it can be used to manage project’s
-
-1. Build
-2. Reporting
-3. Documentation
-
-Focus is more on build aspect of mvn here.
-
-### Form Factor
+## Form Factor
 
 mvn is a java program. It has no UI. However, it is integrated well into Intellij and other IDEs.
 
