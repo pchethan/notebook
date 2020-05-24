@@ -1,5 +1,34 @@
+- [Apache Maven](#apache-maven)
+  * [References](#references)
+  * [What is Maven?](#what-is-maven)
+      - [Form Factor](#form-factor)
+  * [Build Manually](#build-manually)
+    + [How to build a JAR](#how-to-build-a-jar)
+      - [JAR Structure](#jar-structure)
+    + [How to build a WAR?](#how-to-build-a-war)
+      - [War Structure](#war-structure)
+      - [Create war from command line](#create-war-from-command-line)
+  * [Objectives](#objectives)
+    + [1. Providing a uniform build system](#1-providing-a-uniform-build-system)
+    + [2. Providing quality project information](#2-providing-quality-project-information)
+    + [3. Providing guidelines for best practices development](#3-providing-guidelines-for-best-practices-development)
+      - [Other things to note](#other-things-to-note)
+  * [Execution Model](#execution-model)
+    + [LifeCycle, Phases & Goals](#lifecycle--phases---goals)
+      - [Hierarchical Structure](#hierarchical-structure)
+    + [Execution Sequence](#execution-sequence)
+  * [Build Features](#build-features)
+    + [GroupId, ArtifactId, & Version](#groupid--artifactid---version)
+    + [Directory Layout](#directory-layout)
+    + [Dependency Management](#dependency-management)
+    + [Repository Management](#repository-management)
+    + [Profiles](#profiles)
+    + [Other Features](#other-features)
+  * [POM File](#pom-file)
+  * [Archetype](#archetype)
+  * [Running Goals](#running-goals)
+  
 # Apache Maven
-
 
 ## References
 
