@@ -66,8 +66,8 @@ mvn is a java program. It has no UI. However, it is integrated well into Intelli
 ## Objectives
 
 > Maven’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. In
-> order to attain this goal, Maven deals with several areas of concern: ”
-```
+> order to attain this goal, Maven deals with several areas of concern: 
+
 
 ### 1. Providing a uniform build system
 
@@ -101,15 +101,14 @@ See [2]
 On invocation, Maven executes various operations on source/test files by recursively traversing a project folder, just like any other build automation
 system. E.g., Make System
 
-However, it has a distinct execution blueprint - a hierarchical structure of operations comprising a LifeCycle which is at root, Phases which are
-constituent parts of lifecycle and Goals at the bottom of the tree.
+However, it has a distinct execution blueprint - a hierarchical structure of operations comprising a `LifeCycle` which is at root, `Phases` which are constituent parts of `lifecycle` and `Goals` at the bottom of the tree.
 
 On invocation, the maven tool (mvn) tranverses this operation tree. Each of the operation is applied within a project folder scope. So this would involve
 each operation recursively traversing the project folder.
 
 ### LifeCycle, Phases & Goals
 
-Maven defines 3 lifecycles - default, clean and site. default is the most used.
+Maven defines 3 lifecycles - default, clean and site. `default` is the most used.
 
 A Goal is the smallest unit of work (e.g., compile). A Phase is made up of a sequence of 0 or more goals. mvn executese goals in same sequence. A
 sequence of phases make a lifecycle. mvn executes the phases in same sequence.
@@ -118,24 +117,20 @@ Goal implementations reside in plugins. A plugin may embody goals associated wit
 
 #### Hierarchical Structure
 
-
+![](images/maven/maven_ls_ph_gl.jpg)
 
 `default` lifecycle has fixed 23 phases. clean has fixed 3 phases and site has fixed 3 phases.
 
 ### Execution Sequence
 
-mvn command line structure is mvn <options> <phase/goal> <phase/goal> <phase/goal> ...
+mvn command line structure is `mvn <options> <phase/goal> <phase/goal> <phase/goal> ...`
 
 mvn executes them in same order.
 
-```
-If phase is specified, mvn executes all preceding phases before running the specified phase.
-If a goal is specified, mvn executes only that goal.
-```
+- If phase is specified, mvn executes all preceding phases before running the specified phase.
+- If a goal is specified, mvn executes only that goal.
 
-##### 1.
 
-##### 2.
 
 ## Build Features
 
@@ -147,51 +142,47 @@ Maven introduces GroupId, ArtifactId and version for better artifact management.
 
 ### Directory Layout
 
-Prescribes a Standard Directory Layout
+Prescribes a [Standard Directory Layout](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 
 ### Dependency Management
 
-Supports declarative Dependency Management. Lets maven analyse the dependencies and helps in choosing the right version and help resolve conflicts.
+Supports declarative [Dependency Management](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html). Lets maven analyse the dependencies and helps in choosing the right version and help resolve conflicts.
 
 ### Repository Management
 
 In conjunction with versioning, repository management allows download, storing, handling and packaging of artifacts in a seamless way.
 
-Repository management
+[Repository management](https://maven.apache.org/guides/introduction/introduction-to-repositories.html)
 
 ### Profiles
 
 Allows a single project to be build in multiple ways
 
-Profiles to support build variations/flavors
+[Profiles to support build variations/flavors](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)
 
 ### Other Features
 
-```
-Custom behavour with plugins
-Archtetype
-```
+1. [Custom behavour with plugins] (https://maven.apache.org/guides/index.html#archetypes)
+2. [Archtetype](https://maven.apache.org/guides/index.html#archetypes)
+
 ## POM File
 
-Pom file structure
+[Pom file structure](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
 A single XML file at the project and module level which defines a blueprint for mvn execution.
 
 It contains details of
 
-```
-Parent POM
-Child modules
-```
 
-```
-Artifact versioning
-Dependencies
-Repository to use
-Properties
-Plugins
-Profiles
-```
+- Parent POM
+- Child modules
+- Artifact versioning
+- Dependencies
+- Repository to use
+- Properties
+- Plugins
+- Profiles
+
 and more.
 
 POM files can have hierarchical structure. A super POM can be defined to capture common artifact verisons, plugin configurations, dependencies etc.
